@@ -1,0 +1,148 @@
+* { box-sizing: border-box; }
+
+/* Clearfix */
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* Structure */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: garamond, serif;
+}
+
+a {
+    transition: 333mms all ease-in-out;
+}
+
+a:hover {
+    color: #1abc9c;
+}
+
+/* Grid */
+.row {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.column {
+    float: left;
+    margin: 2%;
+}
+
+.column.two-third {
+    width: 65%;
+}
+
+.column.one-half {
+    width: 45%;
+}
+
+.column.one-third {
+  width: 32%
+}
+
+.column:last-of-type {
+  margin-right: 0;
+}
+
+/* Header */
+header {
+    background-color: aliceblue;
+    padding: 10px;
+    margin-bottom: 20px;    
+}
+
+body#home header {
+  margin-bottom: 0;
+}
+
+header .row {
+  margin-bottom: 0;
+}
+.logo {
+    width: 60px;
+    float: left;
+}
+nav {
+    margin-top: 20px;
+}
+header nav {
+    text-align: right;
+    float: right;
+}
+nav a {
+  margin-right: 20px;
+  font-size: 20px;
+  color: #444;
+  text-decoration: none;
+}
+
+nav a:last-of-type {
+  margin: 0;
+}
+
+/* Google Map */
+iframe {
+  max-width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: aliceblue;
+    margin-top: 50px;
+    padding: 5px 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Hero */
+.hero {
+  background: #ccc;
+  background-image:url(images/mountains.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment:fixed;
+}
+
+.hero h1 {
+  margin: 0;
+  padding: 140px 0;
+  color: white;
+  text-shadow: 0 0 10px #444;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  header {
+    text-align: center;
+  }
+
+  .logo {
+    float: none;
+    width: 80px;
+  }
+
+  header nav {
+    float: none;
+    text-align: center;
+  }
+
+  .column {
+    width: 100% !important;
+    margin-right: 0;
+  }
+}
